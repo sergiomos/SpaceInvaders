@@ -1,108 +1,72 @@
-# 🚀 Space Invaders - Jogo
+# 🚀 Space Invaders - O Clássico Reinventado
 
+## 🎮 Sobre o Jogo
 
-<img width="300" height="350" alt="ChatGPT Image 23 de set  de 2025, 00_57_26" src="https://github.com/user-attachments/assets/df197580-7331-4529-b73a-7bbb7c563edb" />
+Space Invaders é um jogo de tiro espacial, onde você assume o controle de uma nave e precisa defender a Terra de uma invasão alienígena. Seu objetivo é simples: **destruir todos os inimigos** antes que eles cheguem à base. Mas cuidado, a cada nível, a dificuldade aumenta\!
 
-## 🎮 Descrição
-Space Invaders é um jogo clássico de tiro espacial onde o jogador controla uma nave e deve destruir todos os alienígenas antes que eles cheguem à base da tela. O jogo possui diferentes tipos de inimigos, incluindo naves comuns e uma nave chefe, cada uma com comportamento próprio.
+<img width="1024" height="1024" alt="Gemini_Generated_Image_axcxkfaxcxkfaxcx" src="https://github.com/user-attachments/assets/708e7581-816e-4064-9643-df749e708a31" />
 
-O objetivo é **sobreviver e acumular pontos** destruindo os alienígenas.
+-----
 
----
+## 🕹️ Como Jogar
 
-## 🕹 Gameplay
+### Controles
 
-### Controles do Player
-- **➡ Seta para direita** → Move o player para a direita.  
-- **⬅ Seta para esquerda** → Move o player para a esquerda.  
-- **⎵ Espaço** → Dispara um míssil.
+  - **➡ Seta Direita**: Mover a nave para a direita.
+  - **⬅ Seta Esquerda**: Mover a nave para a esquerda.
+  - **⎵ Espaço**: Disparar mísseis.
 
-> Cada míssil criado pelo player se move verticalmente até atingir um inimigo ou a parede.  
-> - Se atingir um inimigo, ambos são removidos do jogo.  
-> - Se atingir a parede, o míssil é removido.
+### Mecânicas de Jogo
 
-### Ações das naves inimigas
+#### Naves Inimigas
 
-**Naves comuns:**
-- Movem-se horizontalmente 10 passos, incrementando ou decrementando a posição X.  
-- Descendem 5 unidades a cada ciclo.  
-- Atiram míssil aleatoriamente.  
-- Se tocarem a parede inferior, o jogo termina.  
-- Cada míssil inimigo decrementa Y a cada passo e pode atingir o player, reduzindo sua vida.
+Os invasores se movem horizontalmente e descem a cada ciclo, atirando mísseis aleatoriamente. Se um deles chegar à base, é game over\!
 
-**Nave chefe:**
-- Aparece aleatoriamente a cada 30~50 segundos no canto superior esquerdo.  
-- Move-se horizontalmente 5 unidades por passo.  
-- Desaparece ao chegar no canto superior direito.
+  - **Naves Comuns**: Movem-se de um lado para o outro na tela.
+  - **Nave Chefe**: Aparece aleatoriamente e cruza a tela. É mais difícil de acertar, mas vale mais pontos.
 
----
+#### Mísseis
 
-## ⚡ Elementos Formais
+  - **Míssil do Jogador**: Destrói inimigos ao ser atingido.
+  - **Míssil Inimigo**: Reduz a vida do jogador ao ser atingido.
 
-- **Single-player:** O jogador controla uma única nave.  
-- **Objetivo:** Destruir todos os alienígenas na tela.  
-- **Regras principais:**  
-  - Jogador não pode ultrapassar os limites da tela.  
-  - Alienígenas se movem de um lado para o outro no topo da tela.  
-  - Mísseis podem ser disparados pelo player e pelos inimigos.  
-  - O jogo apresenta níveis de dificuldade progressivos.
+-----
 
----
+## ⚡ Elementos do Jogo
 
-## 🏆 Recursos
+  - **Modo**: Single-player
+  - **Objetivo**: Destruir todos os alienígenas.
+  - **Vidas**: 3
+  - **Mísseis**: Infinitos para ambos os lados.
+  - **Níveis de Dificuldade**: Progressivos.
 
-- **Vidas:** 3  
-- **Pontos:** Inicia com 0. Cada tipo de inimigo dá pontuação diferente:
+-----
+
+## 🏆 Pontuação
+
+Ganhe pontos por cada inimigo destruído.
 
 | Tipo de Inimigo | Pontos |
-|-----------------|--------|
-| Tipo 1          | 10     |
-| Tipo 2          | 20     |
-| Tipo 3          | 30     |
-| Chefe           | 50     |
+| :-------------- | :----- |
+| Tipo 1 | 10 |
+| Tipo 2 | 20 |
+| Tipo 3 | 30 |
+| Chefe | 50 |
 
-- **Mísseis infinitos** para player e inimigos
+-----
 
----
+## 🏁 Fim de Jogo
 
-## 🚧 Limites do jogo
-- Ambiente virtual  
-- Paredes limitam movimento  
-- Quantidade de vidas define quanto o jogador pode continuar
+O jogo termina quando uma destas condições é atingida:
 
----
+  - **Vitória**: Você destrói todos os alienígenas.
+  - **Derrota**: Você perde todas as suas vidas ou um alienígena chega à base.
 
-## 🏁 Condições de término
-- Todos os alienígenas são destruídos → **Vitória** ✅
- <img width="300" height="350" alt="Vitória no Jogo Retro" src="https://github.com/user-attachments/assets/5146e90f-6f51-4799-9154-afad882f456a" />
+<img width="1024" height="1024" alt="derrota" src="https://github.com/user-attachments/assets/e9e05fb5-f1d5-45ae-8bab-2d6811fcb6c2" />
+<img width="1024" height="1024" alt="vitoria" src="https://github.com/user-attachments/assets/ce8a61d5-5dff-4fe8-bd26-c3b2aadd6cd1" />
 
-- Player perde todas as vidas → **Derrota** ❌
- <img width="300" height="350" alt="ChatGPT Image 23 de set  de 2025, 02_26_32" src="https://github.com/user-attachments/assets/2a9cc4ff-cfe3-4c47-854f-c0eba1732261" />
+-----
 
+## 🧑‍💻 Feito por
 
----
-
-## 📋 Procedimentos
-1. Pressione a seta para direita para mover o player para a direita.  
-2. Pressione a seta para esquerda para mover o player para a esquerda.  
-3. Pressione espaço para disparar mísseis.
-
----
-
-## 🔧 Pontos de melhoria
-- Implementar **efeitos sonoros** para tiros e explosões.  
-- Criar **animações** para explosões dos alienígenas.  
-- Adicionar **ranking de pontuação**.
-
----
-
-## 🖼 Feito Por:
-- Sérgio Martins
-
-## 💡 Sugestões de Jogabilidade
-
-O universo de Space Invaders está sempre em expansão! 🌌  
-Se você tiver ideias para **novos inimigos, power-ups, fases ou melhorias**, compartilhe com a gente!  
-
-Sinta-se à vontade para abrir **issues** ou enviar **pull requests** — juntos, podemos tornar o jogo ainda mais épico! 🚀👾
-
+  - Sérgio Martins
